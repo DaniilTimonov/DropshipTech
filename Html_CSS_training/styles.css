@@ -1,0 +1,8 @@
+.body_for_loaded_css {
+    font-family: arial;
+    background-color: rgb(185, 179, 175);
+}
+
+.body_for_loaded_css, p {
+    color: rgb(80, 46, 46);
+}
