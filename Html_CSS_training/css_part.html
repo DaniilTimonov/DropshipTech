@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="centered">
+    <div class="block_intro"> CSS PART of book </div>
+    <p>CSS structure</p>
+    <div class="info_block">
+    
+       <div class="css_selector_notice"></div>
+        <div class="block_for_notice_text"><p style="font-size: 20px; color:red;">селектор</p> указывает к какому элементу применяется правило
+        <p style="font-size:20px; color:green">Обьявления</p> Определяют как должны отображаться элементы указанные в селекторе </div>
+            
+
+    </div>
+    <div class="info_block">
+    
+        <div class="css_propertys"></div>
+         <div class="block_for_text_propertys"><p style="font-size: 20px; color:red;">свойство</p> <p style="color: white">определяют аспекты элемента, которые вы хотите изменить
+         </p><p style="font-size:20px; color:yellow">значения</p><p style="color: white">Значения это параметры, которые вы хотите использовать для выбранных свойств</p> </div>
+             
+ 
+     </div>
+
+
+    </div>
+<style>
+    .css_selector_notice {
+        width:600px;
+        height:360px;   
+        background-image: url(https://c.radikal.ru/c27/2008/02/2c8dcc66bbce.jpg);
+        background-size:cover;
+    }
+    .css_propertys {
+        width:600px;
+        height:360px;   
+        background-image: url(https://c.radikal.ru/c31/2008/c6/5ebf42618ca8.jpg);
+        background-size:cover;
+    }
+    .info_block {
+        display: flex;
+    }
+
+    .block_for_notice_text {
+        width: 600px;
+        height: 360px;
+        border-radius: 20px;
+        
+        border:2px solid #33CC66;
+    }
+    .block_for_text_propertys {
+        width: 600px;
+        height: 360px;
+        border-radius: 20px;
+        background-color:black;
+        
+        border:2px solid #33CC66;
+    }
+    .centered {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .block_intro {
+        width: 100%;
+        height: 50px;
+        font-size: 30px;
+        background-image: url(https://a.radikal.ru/a19/2008/49/0cc236904607.jpg);
+    }
+</style>
+
+</body>
+</html>
