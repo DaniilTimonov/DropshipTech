@@ -6,6 +6,7 @@
     <title>Глава Цвет</title>
 </head>
 <body>
+    
    <div class="text_header"></div> 
    <div class="imaga_notice"><img src="https://a.radikal.ru/a01/2008/dd/4b0f20c1039a.jpg"></div>
    
@@ -32,7 +33,44 @@
 <div class="text_rgb"><p>Также существуют предопредленные цвета </p><p>к примеру red, blue...</p></div>
 </div>
 </div>
+<div class="text_header"><div class="button_heading"></div></div> 
+<div class="background-color_text">background-color</div>
+<div class="block_box_for_background_color_text"></div>
+<div class="describtion_background_color_text" style="font-size: 40px; color:red; font-style: italic;">
+Свойство background-color задает цвет блока в каскадных таблицах стилей, вы можете как пример залить его, используя к примеру предыдущие формы обращения с цветом</div>
+
+
+<div class="block_example_background-color"> <div class="rgb_text_block_example" style="font-size: 30px;"><p>этот блок залит</p><p> через rgb(200,200,200)</p></div><div class="rgb_filled_block" style="background-color:rgb(200,200,200); width:200px; height:200px;"></div>
+<div class="hex_block_example" style="font-size: 30px;"><p>этот блок залит</p><p> через hex #ee3e80</p></div><div class="hex_filled_block" style="background-color:#ee3e80; width:200px; height:200px;"></div>
+<div class="titled_filled_block_example" style="font-size: 30px;"><p>этот блок залит</p><p> через имя цвета DarkCyan</p></div><div class="tiiled_filled_block" style="background-color:darkcyan; width:200px; height:200px;"></div>
+</div>
+
 <style>
+.block_example_background-color {
+    padding-top:20px;
+    display:flex;
+    -webkit-box-shadow: 0px 4px 2px 0px rgba(50, 50, 50, 0.24);
+-moz-box-shadow:    0px 4px 2px 0px rgba(50, 50, 50, 0.24);
+box-shadow:         0px 4px 2px 0px rgba(50, 50, 50, 0.24)
+}
+
+.block_box_for_background_color_text {
+    display:flex;
+    margin:50px;
+}
+
+.describtion_background_color_text {
+    
+
+}    
+.background_color_example1 {
+    display:flex;
+
+}
+.background-color_text {
+font-size: 40px;
+margin:-50px 640px;
+}
 .pocket_box {
     display:flex;
     
@@ -44,6 +82,8 @@ box-shadow:         0px 4px 2px 0px rgba(50, 50, 50, 0.24)
     width:100%;
     height:60px;
     background-color: rgb(193, 240, 119);
+    font-size:30px;
+    
 }
 .property_color_describtion_box {
 display: flex;
@@ -58,6 +98,15 @@ display:flex;
 .schemes_color_describtion_box {
 display: flex;
 }
+.button_heading {
+    border:2px solid black;
+    border-radius:20px;
+    width:400px;
+    height:60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 </style>
 </body>
 
