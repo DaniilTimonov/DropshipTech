@@ -19,7 +19,14 @@
 свойство font-size </p>
 <p style ="background-color:rgb(133, 207, 179); color:black; font-size:20px; ">В стилях использовано свойство font-weight bold благодаря ему написание Автор: Айви Дакетт, становится жирным</p>
 <p style ="background-color:aliceblue; color:black; font-size:20px">Свойство font-style позволит сделать начертание шрифта наклонным, в стилях уже)</p>
+<p class="Propisnye_simvoli" style="background-color:rgb(161, 221, 216); color:black; font-size:30px; font-weight:bolder;">Прописные и строчные символы</p>
+<p style="color:red; font-size:40px; ">работаем  с свойством text-transform</p>
+<div class="box_fox">
+<p class ="uppercase_case">  при значении text-transform: uppercase;  для всех символов в тексте используется верхний регистр</p>
+<p class="lowercase_case">при значении text-transform:lowercase; для всех символов в тексте используется нижний регистр</p>
+<p class="capitalize_case">при значении text-transform:capitalize; все символы будут начинатся с прописной буквы</p>
 
+</div>
 
 
 <style>
@@ -40,7 +47,35 @@ p.credits {
 h2 {
     font-size:1.3em;
 }
+p.Propisnye_simvoli {
+    width:100%;
+    height:60px;
+}
+p.uppercase_case {
+    border:black 1px solid;
+    width:200px;
+    height:200px;    
+    font-size:20px;
+    text-transform: uppercase;
+}
+p.lowercase_case {
+    border:black 1px solid;
+    width:200px;
+    height:200px;    
+    font-size:20px;
+    text-transform: lowercase;
+}
 
+p.capitalize_case {
+    border:black 1px solid;
+    width:200px;
+    height:200px;    
+    font-size:20px;
+    text-transform: capitalize;
+}
+.box_fox {
+    display:flex;
+}
 
 </style>
 
