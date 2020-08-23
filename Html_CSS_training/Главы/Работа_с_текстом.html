@@ -25,7 +25,37 @@
 <p class ="uppercase_case">  при значении text-transform: uppercase;  для всех символов в тексте используется верхний регистр</p>
 <p class="lowercase_case">при значении text-transform:lowercase; для всех символов в тексте используется нижний регистр</p>
 <p class="capitalize_case">при значении text-transform:capitalize; все символы будут начинатся с прописной буквы</p>
+</div>
+<p style="background-color:beige; width:100%;height: 50px; font-color:black; font-size:30px; font-weight: bolder;">Подчеркивание, перечеркивание, и другое форматирование</p>
+<div class="box_fox">
+<p class="none_case">Данное значение сбрасывает любое примененное к тексту оформление</p>
+<p class="underline_case">Данное значение добавляет линию под текстом</p>
+<p class="overline_case">Данное значение добавляет линии над текстом</p>
+<p class="line-through_case">Данное значение добавляет линию проходящую через слова</p>
+<p class="blink_case">Данное значение заставляет текст мигать </p>
+</div>
+<p style="background-color:rgb(176, 241, 138); width:100%; height: 50px; font-color:black; font-size:30px; font-weight:bolder;">
+Межбуквенный интервал и интервал между словами</p>
+<div class="box_fox">
+<p class="letter_spacing_case">Пример текста когда используется значение letter-spacing межбуквенный интервал</p>
+<p class="word_spacing_case">Пример текста когда используется значние woord-spacing интервал между слов</p>
+</div>
+<p style="background-color:rgb(221, 161, 203); width:100%; height:50px; font-color:white; font-size:30px; font-weight:bolder;">
+Выравнивание text-align</p>
+<div class="box_fox">
+<p class="left_case">Определяет, что текст должен быть выровнен по левому краю</p>
+<p class="right_case">Определяет, что текст должен быть выровнен по правому краю</p>   
+<p class="center_case">Данное значение позволяет выровнять текст по центру</p>
+<p class="justify_case"> определяет, что каждая строка абзаца за исключением  последней должна занимать всю ширину текстового поля, определяет, что каждая строка абзаца за исключением  последней должна занимать всю ширину текстового поля
 
+</div>
+<p style="background-color:rgb(141, 226, 222); width:100%; height: 50px; font-color:white; font-size:30px; font-weight:bolder;">
+текст с тенью text-shadow</p>
+<p style="width:400px; height:20px; border:black 2 px solid;">Для создания тени свойству нужно сообщить довольно сложное значение
+, состоящее </p><p style="font-weight: bolder; color:red; font-size:30px">из трех длин и цвета тени.</p>
+<div class="box_fox">
+    <p style="width:400px; height:200px; border:black 1px solid; font-size:30px;"> Первое значение длины указывает , насколько далеко влево или 
+    вправо должна падать тень </p>
 </div>
 
 
@@ -76,7 +106,83 @@ p.capitalize_case {
 .box_fox {
     display:flex;
 }
-
+p.none_case {
+    border:black 1px solid;
+    width:200px;
+    height:200px;    
+    font-size:20px;
+    text-decoration:none;
+}
+p.underline_case {
+    border:black 1px solid;
+    width:200px;
+    height:200px;    
+    font-size:20px;
+    text-decoration:underline; 
+}
+p.overline_case {
+    border:black 1px solid;
+    width:200px;
+    height:200px;    
+    font-size:20px;
+    text-decoration:overline; 
+}
+p.line-through_case {
+    border:black 1px solid;
+    width:200px;
+    height:200px;    
+    font-size:20px;
+    text-decoration:line-through; 
+}
+p.blink_case {
+    border:black 1px solid;
+    width:200px;
+    height:200px;    
+    font-size:20px;
+    text-decoration:blink; 
+}
+p.letter_spacing_case {
+    border:black 1px solid;
+    width:400px;
+    height:200px;    
+    font-size:20px;
+    letter-spacing:1em;
+}
+p.word_spacing_case {
+    border:black 1px solid;
+    width:400px;
+    height:200px;    
+    font-size:20px;
+    word-spacing:1em; 
+}
+p.left_case {
+    border:black 1px solid;
+    width:400px;
+    height:200px;    
+    font-size:20px;
+    text-align:left;
+}
+p.right_case {
+    border:black 1px solid;
+    width:400px;
+    height:200px;    
+    font-size:20px;
+    text-align:right;
+}
+p.center_case {
+    border:black 1px solid;
+    width:400px;
+    height:200px;    
+    font-size:20px;
+    text-align:center;
+}
+p.justify_case {
+    border:black 1px solid;
+    width:400px;
+    height:200px;    
+    font-size:20px;
+    text-align:justify;
+}
 </style>
 
 </body>
