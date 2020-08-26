@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+* {
+    margin:0 auto;
+}
+
+body {
+    background-image:url(https://img4.goodfon.ru/original/2560x1600/a/7e/abstract-background-with-colorful-geometric-flat-design-dots.jpg);
+}
+.width_height_case {
+    width:150px;
+    height:150px;
+    background-color:white;
+    border:2px black solid;
+}
+.box_fox {
+    display:flex;
+}
+
+.block_procents {
+    width:23%;
+    height:32%;
+    background-color:red;
+    color:white;
+    writing-mode:tb-rl;
+}
+.ruled {
+    width:200px;
+    height:1000px;
+    border:2px solid black;
+    background-color:burlywood;
+}
+.box_for_min_max_width_case {
+    width:100%;
+    height:250px;
+    background-color:chocolate;
+}
+td.describtion {
+    min-width: 450px;
+    max-width:650px;
+    min-height:10px;
+    max-height:30px;
+    padding:5px;
+    margin:0px;
+    
+}
+tr.describtion_box {
+    display:flex;
+}
+.overflow_hidden_case {
+    width:200px;
+    height:150px;
+    background-color:white;
+    overflow:hidden;
+    font-size:30px;
+}
+.overflow_scroll_case {
+    width:200px;
+    height:150px;
+    background-color:white;
+    overflow:scroll;
+    font-size:30px;
+}
+p.one {
+    border-width:100px;
+    font-size:40px;
+    
+}
+p.two {
+    border-width:thick;
+    font-size:60px;
+}
+p.three {
+    border-width:lpx 4рх 12рх 4рх;
+    font-size:70px;
+}
+.solid_border_style_case {
+    border-style:solid;
+    background-color:white;
+    width:200px;
+    height:200px;
+    writing-mode:tb-rl;
+    font-size:40px;
+    overflow:scroll;
+    border-radius:10px;
+}
+.dotted_border_style_case {
+    border-style:dotted;
+    background-color:white;
+    width:200px;
+    height:200px;
+    writing-mode:tb-rl;
+    font-size:40px;
+    overflow:scroll;
+    border-radius:10px;
+}
+.dashed_border_style_case {
+    border-style:dashed;
+    background-color:white;
+    width:200px;
+    height:200px;
+    writing-mode:tb-rl;
+    font-size:40px;
+    overflow:scroll;
+    border-radius:10px;
+}
+.double_border_style_case {
+    border-style:double;
+    background-color:white;
+    width:200px;
+    height:200px;
+    writing-mode:tb-rl;
+    font-size:40px;
+    overflow:scroll;
+    border-radius:10px;
+}
+.groove_border_style_case {
+    border-style:groove;
+    background-color:white;
+    width:200px;
+    height:200px;
+    writing-mode:tb-rl;
+    font-size:40px;
+    overflow:scroll;
+    border-radius:10px;
+}
+.ridge_border_style_case {
+    border-style:ridge;
+    background-color:white;
+    width:200px;
+    height:200px;
+    writing-mode:tb-rl;
+    font-size:40px;
+    overflow:scroll;
+    border-radius:10px;
+}
+.inset_border_style_case {
+    border-style:inset;
+    background-color:white;
+    width:200px;
+    height:200px;
+    writing-mode:tb-rl;
+    font-size:40px;
+    overflow:scroll;
+    border-radius:10px;
+}
+.outset_border_style_case {
+    border-style:outset;
+    background-color:white;
+    width:200px;
+    height:200px;
+    writing-mode:tb-rl;
+    font-size:40px;
+    overflow:scroll;
+    border-radius:10px;
+}
+.border_color_case {
+    border-color:red black yellow green;
+    width:450px;
+    height:590px;
+    font-size:40px;
+    border-width:30px;
+    border-style:inset;
+    background-color: white;
+}
+</style>
+
+<body> 
+<p class="hover_headers" style="width:100%; border:2px solid rgb(247, 238, 121); height:60px; font-size:40px; background-color:beige; border-radius:30px; text-align:center">Раздел БЛОКИ</p>
+<p style="width:100%; background-color:white; height:30px; font-size:25px;">Размеры блока width, height</p>
+<div class="box_fox">
+<div class="width_height_case">Для данного блока установлены размеры width:150px, height:150px</div>
+<p style="background-color:bisque; font-size:40px;  width:500px; height:200px;">Свойство width - отвечает за ширину блока, Свойство height - отвечает за высоту блока</p>
+</div>
+<div class="ruled">width:200px; height:1000px;
+<div class="block_procents">width:23%;height:32%;</div>
+<p style="background-color:white; width:200px; height:200px; border:black 2px solid; border-radius:10px; text-align:center"> блок выше отформатирован свойством width:23%; height:23%, он обернут в блок размером 200px на 1000x. суть в том, что указанные проценты исчисляются от блока родителя </p>
+</div>
+<p style="width:100%; background-color:white; height:30px; font-size:25px;">Ограничение ширины и высоты min-width, max-width, min-height, max-height</p>
+<div class="box_for_min_max_width_case">
+<tr class="describtion_box">
+        <td><img src="https://c.radikal.ru/c22/2008/b5/e42d3159a124.jpg" width="200"
+        height="1OO" аlt="Image" /></td>
+        <td class="describtion">И днем и ночью кот ученый. Крутится вокруг библиотек. Тусит с магами знаний , поручая себе важные задания, для спасения человечества интересная книга,
+            поможет ва в понимании основ магии и творчества.
+         </td>
+        <td><img src="https://a.radikal.ru/a42/2008/c6/5fe00917d608.png" width="50" height="50"></td>
+        
+</tr>
+<p style="width:100%; background-color:white; height:30px; font-size:25px;">Перетекание контента overflow</p>  
+<div class="box_fox">  
+<div class="overflow_hidden_case">Текст, который выходит за пределы блока будет скрыт благодаря свойству overflow и значению hidden</div>
+<div class="overflow_scroll_case"> Текст, который выходит за пределы блока можно будет прокрутить благодаря свойству overflow и значению scroll </div>
+</div>
+<p style="width:100%; background-color:white; height:30px; font-size:25px;">толщина границ border-width</p>  
+<p class="one">Первый текстовый блок с интересной информацией использовано свойство border-width со значением 2px </p>
+<p class="two">Второй интересный блок с информацией  использовано border-width:thick;</p>
+<p class="three">Третий интересный блок с информацией    border-width:lpx 4рх 12рх 4рх; </p>
+<p style="width:100%; background-color:white; height:30px; font-size:25px;">стиль границы border-style</p>
+<div class="box_fox">
+<div class="solid_border_style_case"> непрерывная линия border-style:solid</div>  
+<div class="dotted_border_style_case">пунктирная в виде точек border-style:dotted</div>  
+<div class="dashed_border_style_case">пунктирная граница border-style:dashed</div>
+<div class="double_border_style_case">две сплошные линии border-style:double</div>
+<div class="groove_border_style_case">врезанная лининя border-style:groove</div>
+<div class="ridge_border_style_case">выпуклая линия border-style:ridge</div>
+<div class="inset_border_style_case">вдавленная линия border-style:inset</div>
+<div class="outset_border_style_case">выдавленная линия border-style:outset</div>
+</div>  
+<p style="width:100%; background-color:white; height:30px; font-size:25px;">цвет границы border-color</p>
+<div class="border_color_case">свойство border-color задает классный цвет нашей границе. мы можем указывать свойства цвета границы по отдельности как border-top-cololor, так и все четыре стороны в одном свойстве. Как душе угодно))
+В примере укажу все значения в одном свойстве </div>
+</div>
+</body>
+</html>
