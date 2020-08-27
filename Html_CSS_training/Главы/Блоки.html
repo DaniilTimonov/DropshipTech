@@ -169,6 +169,91 @@ p.three {
     border-style:inset;
     background-color: white;
 }
+li {
+display: inline ;
+margin-right :10 px; }
+li.coming-soon {
+visibility: hidden ; }
+
+.box_one_li {
+    width:300px;
+    height:200px;
+    border:2px solid black;
+    background-color:white;
+}
+
+.box_two_li {
+    width:300px;
+    height:200px;
+    border:2px solid black;
+    background-color:white;
+
+}
+.one_shadow_case {
+    background-color:pink;
+    box-shadow:-5px -5px #777777;   
+    width:300px;
+    height:300px;
+    text-align:center;
+    font-size:20px;
+    }
+.two_shadow_case {
+    background-color:pink;
+    box-shadow:5px 5px 5px #777777;   
+    width:300px;
+    height:300px;
+    text-align:center;
+    font-size:20px;
+}
+.three_shadow_case {
+    background-color:pink;
+    box-shadow:5px 5px 5px 5px #777777;   
+    width:300px;
+    height:300px;
+    text-align:center;
+    font-size:20px;
+}
+.four_shadow_case {
+    background-color:pink;
+    box-shadow:0 0 10px #777777;   
+    width:300px;
+    height:300px;
+    text-align:center;
+    font-size:20px;
+}
+.five_shadow_case {
+    background-color:pink;
+    box-shadow: inset 0 0 10px #777777;   
+    width:300px;
+    height:300px;
+    text-align:center;
+    font-size:20px;
+}
+.border_radius_case {
+    width:300px;
+    height: 300px;
+    border-radius:30px 30px;
+    background-color:rgb(218, 106, 175);
+    text-align:center;
+}
+.first_custom_border_radius {
+    border-top-left-radius: 120px 120px;
+    background-color:rgb(218, 106, 175);
+    width:300px;
+    height: 300px;
+}
+.second_custom_border_radius {
+    border-radius: 1em 20em 20em 2em /  2em 30em 2em 1em;
+    background-color:rgb(218, 106, 175);
+    width:300px;
+    height: 300px;
+}
+.third_custom_border_radius {
+    border-radius: 190px;
+    background-color:rgb(218, 106, 175);
+    width:300px;
+    height: 300px;
+}
 </style>
 
 <body> 
@@ -217,5 +302,47 @@ p.three {
 <div class="border_color_case">свойство border-color задает классный цвет нашей границе. мы можем указывать свойства цвета границы по отдельности как border-top-cololor, так и все четыре стороны в одном свойстве. Как душе угодно))
 В примере укажу все значения в одном свойстве </div>
 </div>
+
+<p style="width:100%; background-color:white; height:30px; font-size:25px; margin-top:1350px;">сокрытие блоков visibility</p>
+<div class="box_fox">
+<ul>
+ <div class="box_one_li">   
+<li>Дoмoй</li>
+<li> Toвapы</li>
+<li class= "coming-soon">Ycлyги</li>
+<li>O нac</li>
+<li>Контакты</li>
+</ul>
+</div>
+<div class="box_two_li">
+<p style="font-size:23px"> в коде выше присутствует блок для пунка меню Услуги, но он скрыт путем свойства visibility и значение hidden, а место, которое
+    она занимает осталось
+</p>
+
+</div>
+
+
+</div>
+<p style="width:100%; background-color:white; height:30px; font-size:25px;">тени блоков box-shadow</p>
+<p style="width:100%; background-color:white; height:120px; text-align:center; font-size:30px;">Свойство box-shadow позволяет добавлять тень вокруг блока. Оно работает так же, как свойство text-shadow</p> 
+<div class="box_fox">
+<div class="one_shadow_case">  box-shadow:-5px -5px #777777; </div>
+<div class="two_shadow_case"> box-shadow:5px 5px 5px #777777;</div>
+<div class="three_shadow_case">box-shadow:5px 5px 5px 5px #777777; </div>
+<div class="four_shadow_case">box-shadow:0 0 10px #777777; </div>
+<div class="five_shadow_case">box-shadow: inset 0 0 10px #777777;  </div>
+</div>
+<p style="width:100%; background-color:white; height:120px; text-align:center; font-size:30px;">Закругленные углы border-radius</p>
+<div class="border_radius_case">Данный блок отредактирован свойством border-radius  с его помощью можно создавать закругленые углы</div>
+<p style="width:100%; background-color:rgb(157, 210, 231); height:90px; text-align:center; font-size:30px;">Также можно задавать различные значения закруглениями, чтобы в итоге получились кастомизированные блоки</p>
+<div class="box_fox">
+<div class="first_custom_border_radius"></div>
+<div class="second_custom_border_radius"></div>
+<div class="third_custom_border_radius"></div>
+
+
+</div>
+
+
 </body>
 </html>
