@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Списки_таблицы_формы</title>
+ <style>
+body {
+    background-image: url(https://kartinkinaden.ru/uploads/posts/2020-07/1593743436_60-p-zheltie-veselie-foni-71.jpg);
+}
+.box_for_menu {
+    display: flex;
+}
+.cosmo_hero {
+    
+}
+.cosmo_menu_head {
+    width: 100%;
+    height:300px;
+    background-color:white;
+    border-radius:50px;
+    font-size:100px;
+    text-align:center;
+}
+.chapter_title_block {
+    width:500px;
+    height:60px;
+    background-color:white;
+    border-radius:20px;
+    text-align:center;
+    font-size:30px;
+}
+.chapter_title_block:hover {
+    font-size:40px;
+}
+ol {
+    list-style-type:lower-roman;
+}
+
+.field_for_lists {
+    width: 400px;
+    height: 600px;
+    background-color:white;
+    font-size:30px;
+    border-radius:20px;
+}
+
+.box_fox {
+    display:flex;
+}
+ul.list_style_image_case {
+    list-style-image: url("https://c.radikal.ru/c11/2008/fd/a182d45c6921.png");
+}
+table.books {
+    width:600px ;
+}
+th, td {
+    padding: 7px 10px 10px 10px;
+}
+th {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size:90%;
+    border-bottom:2px solid #111111;
+    border-top:1px solid #999;
+    text-align:left;
+}
+tr.even {
+    background-color:#efefef;
+}
+tr:hover {
+    background-color:#c3e6e5;
+}
+.money {
+    text-align:right;
+}
+ </style>
+    
+
+</head>
+<body>
+<div class="box_for_menu">
+
+<div class="cosmo_hero"><img src="https://a.radikal.ru/a13/2008/fa/c92f3707fe51.png"  > </div>
+<div class="cosmo_menu_head">Списки таблицы и формы</div>  
+</div>
+<div class="chapter_title_block">Маркеры list-style-type</div>
+<p style="width:100%; height: 60px; background-color:antiquewhite; font-size:25px">Свойство list-style-type позволяет выбрать форму или стиль маркера данное свойство может использоваться в правилах, применяемым к элементам ol, ul, li 
+список ниже отредактирован значениме lower-roman </p>
+<div class="field_for_lists">
+<hl> Поэмы</hl>
+    <h2> Эмили Дикинсон</h2>
+    <ol>
+    <li>ЖИзнь</li>
+    <li>Пpиpoдa </li>
+    <li>Любовь </li>
+    <li> Время и вечность </li>
+    <li> Одинокий пec</li>
+    </ol>
+</div>
+<div class="chapter_title_block">Маркеры-изображения list-style-image</div>
+<div class="field_for_lists">
+ <h1>Список переведенных поэм</h1>
+ <h2>Артюр Рембо</h2>
+<ul class="list_style_image_case">
+<li class="li_style_image_case_example">Офелия</li>
+<li class="li_style_image_case_example">На музыке</li>
+<li class="li_style_image_case_example">Зимняя мечта</li>
+<li class="li_style_image_case_example">Гласные</li>
+<li class="li_style_image_case_example">Пьяный корабль</li>
+</ul>
+</div>
+<div class="chapter_title_block">свойства таблицы</div>
+<h1>Книжный аукцион</h1>
+<table class="books">
+<tr>
+    <th>Автор</th>
+    <th>Название</th>
+    <th class="money">Зарезирвированная цена</th>
+    <th class="money">Текущая ставка</th>  
+</tr>
+<tr>
+    <td>Эдвард Эстлин Каммингс</td>
+    <td>Тюльпаны и дымоходы</td>
+    <td class="money">60 000 рублей</td>
+    <td class="money">78 000 рублей</td>
+</tr>
+<tr class="even">
+    <td>Карл I Орлеанский</td>
+    <td>Поэмы</td>
+    <td class="money"></td>
+    <td class="moeny">162 000 рублей</td>
+</tr>
+<tr>
+    <td>Томас Стернз Элиот</td>
+    <td> Поэмы 1909-1925</td>
+    <td class="money">32 000 рублей</td>
+    <td class="money">253 000 рублей</td>
+</tr>
+<tr class="even">
+    <td> Сильвия-Плат</td>
+    <td>Колосс</td>
+    <td class="money"></td>
+    <td class="money">30 300 рублей</td>
+</tr>
+</table>
+<div class="chapter_title_block">границы пустых ячеек empty-cells</div>
+<div class="box_fox">
+<table class="one">
+<tr>
+    <td>1</td>
+    <td>2</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td></td>
+</tr>
+</table>
+
+
+</div>
+
+</body>
+</html>
