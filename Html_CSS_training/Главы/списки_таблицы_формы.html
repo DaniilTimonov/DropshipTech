@@ -74,6 +74,12 @@ tr:hover {
 .money {
     text-align:right;
 }
+.table_one {
+    empty-cells: show;
+}
+.table_two {
+    empty-cells: hide;
+}
  </style>
     
 
@@ -146,16 +152,28 @@ tr:hover {
 </table>
 <div class="chapter_title_block">границы пустых ячеек empty-cells</div>
 <div class="box_fox">
-<table class="one">
+<table class="table_one">
 <tr>
-    <td>1</td>
-    <td>2</td>
+    <td style="border:1px solid black; padding: 15px; background-color:white; width: 40px; height: 40px; text-align:center;">1</td>
+    <td style="border:1px solid black; padding: 15px; background-color:white; width: 40px; height: 40px; text-align:center;">2</td>
 </tr>
 <tr>
-    <td>3</td>
-    <td></td>
+    <td style="border:1px solid black; padding: 15px; background-color:white; width: 40px; height: 40px; text-align:center;">3</td>
+    <td style="border:1px solid black; padding: 15px; background-color:white; width: 40px; height: 40px; text-align:center;"></td>
 </tr>
 </table>
+
+<table class="table_two">
+    <tr>
+        <td style="border:1px solid black; padding: 15px; background-color:white; width: 40px; height: 40px; text-align:center;">1</td>
+        <td style="border:1px solid black; padding: 15px; background-color:white; width: 40px; height: 40px; text-align:center;">2</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid black; padding: 15px; background-color:white; width: 40px; height: 40px; text-align:center;">3</td>
+        <td style="border:1px solid black; padding: 15px; background-color:white; width: 40px; height: 40px; text-align:center;"></td>
+    </tr>
+    </table>
+    
 
 
 </div>
