@@ -24,7 +24,7 @@ body {
 }
 .chapter_title_block {
     width:500px;
-    height:60px;
+    height:80px;
     background-color:white;
     border-radius:20px;
     text-align:center;
@@ -79,6 +79,42 @@ tr:hover {
 }
 .table_two {
     empty-cells: hide;
+}
+.input_styled_case {
+    font-size:120%;
+    color:#5a5854;
+    background-color: #f2f2f2;
+    border:1px solid #bdbdbd;
+    border-radius:5px;
+    padding:5px 5px 5px 30px;
+    background-repeat:no-repeat;
+    background-position:8px 9px;
+    display:block;
+    margin-bottom:10px;
+}
+.input_styled_case:focus {
+    background-color: #ffffff;
+    border:1px solid #b1e1e4;
+}
+.input_submit_case {
+    color:#444444;
+    text-shadow: 0px 1px 1px #ffffff;
+    border-bottom: 2px solid #b2b2b2;
+    background-color: #b9e4e3;
+    background: -webkit-gradient(linear, left top, left bottom, from (#beeae9), to (#a8cfce));
+    width:180px;
+    height:50px;
+}
+.input_submit_case:hover {
+    color: #333333;
+    border:1px solid #a4a4a4;
+    border-top:2px solid #b2b2b2;
+    background-color: #a0dbc4;
+    
+}
+.url_case_link {
+    cursor:url("https://a.radikal.ru/a08/2008/4b/d241aa75844f.png");
+    font-size:60px; padding-left:10px;
 }
  </style>
     
@@ -173,10 +209,49 @@ tr:hover {
         <td style="border:1px solid black; padding: 15px; background-color:white; width: 40px; height: 40px; text-align:center;"></td>
     </tr>
     </table>
-    
-
-
 </div>
-
+<div class="chapter_title_block">интервалы между ячейками border-spacing; border-collapse;</div>
+<div class="box_fox">
+<table style="border-spacing:5px 15px;" >
+<tr>
+    <td style="background-color: #0088dd; padding:15px; border: 2px solid #000000;">1</td>
+    <td style="background-color: #0088dd; padding:15px; border: 2px solid #000000;">2</td>
+</tr>
+<tr>
+    <td style="background-color: #0088dd; padding:15px; border: 2px solid #000000;">3</td>
+    <td style="background-color: #0088dd; padding:15px; border: 2px solid #000000;">4</td>
+</tr>
+</table>
+<table style="border-collapse:collapse;" >
+    <tr>
+        <td style="background-color: #0088dd; padding:15px; border: 2px solid #000000;">1</td>
+        <td style="background-color: #0088dd; padding:15px; border: 2px solid #000000;">2</td>
+    </tr>
+<tr>
+ <td style="background-color: #0088dd; padding:15px; border: 2px solid #000000;">3</td>
+ <td style="background-color: #0088dd; padding:15px; border: 2px solid #000000;">4</td>
+</tr> 
+</table>
+</div>
+<p style="width:100%; height:80px;background-color:white;border-radius:10px; text-align:center; font-size:40px;">Стилизация полей ввода</p>
+<input class="input_styled_case email"> 
+<input class="input_styled_case email"> 
+<input class="input_styled_case email"> 
+<input class="input_styled_case email"> 
+<p style="width:100%; height:80px;background-color:white;border-radius:10px; text-align:center; font-size:40px;">Стилизация кнопок подтверждения</p>
+<input type="button" class="input_submit_case">
+<p style="width:100%; height:80px;background-color:white;border-radius:10px; text-align:center; font-size:40px;">Стили указателей мыши cursor</p>
+<p style="width:100%; height:30px; background-color:red; color:white; font-weight: bolder; text-align:center;">Свойство cursor позволяет выбрать вид указателя мыши ниже примеры использования значений свойства cursor</p>
+<div class="box_fox"><img src="https://b.radikal.ru/b17/2008/ba/c19e7bf4d88a.png">
+    <a style="cursor:auto; font-size:60px;" href="#">auto</a>
+    <a style="cursor:crosshair; font-size:60px; padding-left:10px;" href="#">crosshair</a>
+    <a style="cursor:default; font-size:60px; padding-left:10px;" href="#">default</a>
+    <a style="cursor:pointer; font-size:60px; padding-left:10px;" href="#">pointer</a>
+    <a style="cursor:move; font-size:60px; padding-left:10px;" href="#">move</a>
+    <a style="cursor:text; font-size:60px; padding-left:10px;" href="#">text</a>
+    <a style="cursor:wait; font-size:60px; padding-left:10px;" href="#">wait</a>
+    <a style="cursor:help; font-size:60px; padding-left:10px;" href="#">help</a>
+    <a class="url_case_link" href="#">url</a>
+</div>
 </body>
 </html>
