@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример макета в html5</title>
+<style>
+header, section, footer, aside, nav, article, figure, figcaption {
+    display: block;
+}
+body {
+    color: #666666;
+    background-color: #f9f8f6;
+    background-image:url("https://krot.info/uploads/posts/2020-01/1579315276_37-113.jpg");
+    background-position:center;
+    font-family: Georgia, Times, serif;
+    line-height: 1.4em;
+    margin:0px;
+}
+.wrapper {
+    width:940px;
+    margin:20px auto 20px auto;
+    border:2px solid #000000;
+    background-color:#ffffff;
+}
+header {
+    height:160px;
+    background-image:url("https://c.radikal.ru/c39/2009/5f/4584063dfa6c.jpg");
+}
+h1 {
+    text-indent: -9999px;
+    width:940px;
+    height:130px;
+    margin:0px;
+}
+nav, footer {
+    clear:both;
+    color:#ffffff;
+    background-color:#aeaca8;
+    height:30px;
+}
+nav, ul {
+    margin: 0px;
+    padding:5px 0px 5px 30px;
+}
+nav li {
+    display: inline; 
+    margin-right: 40px;
+}
+nav li a {
+    color:#ffffff;
+}
+nav li a:hover, nav li a.current {
+    color: #000000;
+}
+section.courses {
+    float:left;
+    width:659px;
+    border-right: 1px solid #eeeeee;
+}
+article {
+    clear:both;
+    overflow:auto;
+    width:100%;
+}
+hgroup {
+    margin-top:40px;
+}
+figure {
+    float: left;
+    width:290px;
+    height:220px;
+    padding:5px;
+    margin:20px;
+    border:1px solid #eeeeee;
+}
+figcaption {
+    font-size:90%;
+    text-align:left;
+}
+aside {
+    width: 230px;
+    float: left;
+    padding: 0px 0px 0px 20px;
+}
+aside section a {
+    display:block;
+    padding:10px;
+    border-bottom: 1px solid #eeeeee;
+}
+aside section a:hover {
+    color:#985d6a;
+    background-color:#efefef;
+}
+a {
+    color:#de6581;
+    text-decoration:none;
+}
+h1, h2, h3 {
+    font-weight: normal;
+}
+h2  {
+    margin: 10px 0px 5px  0px;
+    padding: 0px;
+}
+h3 {
+    margin: 0px 0px 10px 0px;
+    color: #de6581;
+}
+aside h2 {
+    padding: 30px 0px 10px 0px;
+    color: #de6581;
+}
+footer {
+    font-size:80%;
+    padding:7px 0px 0px 20px;
+}
+</style>
+    
+</head>
+<body>
+ <div class="wrapper">
+     <header>
+        <h1>Кафе у Такеши</h1>
+<nav>
+    <ul>
+<li><a href="" class="current">Главная</a></li>
+<li><a href="">Кафе</a></li>
+<li><a href="">Меню</a></li>
+<li><a href="">О нас</a></li>
+<li><a href="">Контакты</a></li>
+    </ul>
+</nav>
+     </header>
+<section class="courses">
+<article>
+<figure>
+<img src="https://d.radikal.ru/d34/2009/75/0c1e76bf3579.jpg" alt="Bok choi"/>    
+<figcaption>Китайская капуста</figcaption>
+</figure>
+<hgroup>
+    <h2>Японская вегеатрианская кухня</h2>
+    <h3>Пятинедельные курсы в Лондоне</h3>
+</hgroup>
+<p>Знакомство с традиционными японскими вегетарианскими блюдами из риса и лапши</p>
+</article>
+</section>
+<aside>
+<section class="popular-recipes">
+    <h2>популярные рецепты</h2>
+    <a href="">Якитори(Жаренная курица)</a>
+    <a href="">Цукунэ(пирожки с куриным фаршем)</a>
+    <a href="">Окономияки (блины из различных ингредиентов)</a>
+    <a href="">Мизутаки (тушеная курица)</a>
+</section>
+<section class="contact-details">
+    <h2> адрес</h2>
+    <p>Кафе "у Такеши" <br/>
+        Москва <br/>
+        Новый Арбат, 19 </p>  
+    </p>
+</section>
+<footer>
+    &copy; 2013 Кафе "У Такеши"
+</footer>
+</div><!-- wrapper-->
+</body>
+</html>

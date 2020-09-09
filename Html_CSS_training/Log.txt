@@ -32,3 +32,5 @@
 выравнивания с помощью CSS, так же возможность центрирования. Разобрал свойство background-image.Также значения background-repeat-x, background-repeat-y, no-repeat, fixed, scroll,
 background-position
 20. Разобрал заголовки и нижние колонтитулы <header> <footer>. Элемент меню навигации <nav>
+21. Проработал пример макета в html5
+22. Закончил с книгой HTML и CSS. Разработка и дизайн веб-сайтов by Дакетт Д. (z-lib.org).pdf
